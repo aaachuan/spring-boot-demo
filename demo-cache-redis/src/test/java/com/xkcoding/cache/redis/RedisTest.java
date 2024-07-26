@@ -38,6 +38,10 @@ public class RedisTest extends SpringBootDemoCacheRedisApplicationTests {
         ExecutorService executorService = Executors.newFixedThreadPool(1000);
         IntStream.range(0, 1000).forEach(i -> executorService.execute(() -> stringRedisTemplate.opsForValue().increment("count", 1)));
 
+
+        String count = stringRedisTemplate.opsForValue().get("count");
+        log.debug("【count】= {}", count);
+
         stringRedisTemplate.opsForValue().set("k1", "v1");
         String k1 = stringRedisTemplate.opsForValue().get("k1");
         log.debug("【k1】= {}", k1);
