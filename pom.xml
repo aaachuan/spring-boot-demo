@@ -70,6 +70,9 @@
     <module>demo-https</module>
     <module>demo-flyway</module>
     <module>demo-pay</module>
+      <module>demo-server-springboot-starter</module>
+    <module>demo-server-springboot-starter</module>
+    <module>demo-server-springboot-starter-test</module>
   </modules>
   <packaging>pom</packaging>
 
