@@ -7,6 +7,8 @@
   <groupId>com.xkcoding</groupId>
   <artifactId>spring-boot-demo</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
   <modules>
     <module>demo-helloworld</module>
     <module>demo-properties</module>
@@ -70,12 +72,9 @@
     <module>demo-https</module>
     <module>demo-flyway</module>
     <module>demo-pay</module>
-      <module>demo-server-springboot-starter</module>
     <module>demo-server-springboot-starter</module>
     <module>demo-server-springboot-starter-test</module>
   </modules>
-  <packaging>pom</packaging>
-
   <name>spring-boot-demo</name>
   <url>http://xkcoding.com</url>
 
